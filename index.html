@@ -37,13 +37,13 @@
         <nav class="header-navigation">
           <ul class="header-nav">
             <li class="header-nav-item">
-              <a class="header-nav-link" href="" target="_blank">Studio</a>
+              <a class="header-nav-link" href="./index.html">Studio</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="" target="_blank">Portfolio</a>
+              <a class="header-nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="" target="_blank">Contacts</a>
+              <a class="header-nav-link" href="#footer">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -91,17 +91,13 @@
         <nav class="header-mob-navigation">
           <ul class="header-mob-nav">
             <li class="header-mob-nav-item">
-              <a class="header-mob-nav-link" href="" target="_blank">Studio</a>
+              <a class="header-mob-nav-link" href="./index.html">Studio</a>
             </li>
             <li class="header-mob-nav-item">
-              <a class="header-mob-nav-link" href="" target="_blank"
-                >Portfolio</a
-              >
+              <a class="header-mob-nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="header-mob-nav-item">
-              <a class="header-mob-nav-link" href="" target="_blank"
-                >Contacts</a
-              >
+              <a class="header-mob-nav-link" href="#footer">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -528,7 +524,7 @@
       </section>
 
       <!-- PORTFOLIO -->
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
 
@@ -773,7 +769,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer-top">
           <div class="footer-info">
@@ -876,7 +872,7 @@
           <label class="modal-label">
             Name
             <div class="modal-input-wrapper">
-              <input type="text" class="modal-input" name="username" required />
+              <input type="text" class="modal-input" name="username" />
               <svg class="modal-input-icon" width="12" height="12">
                 <use
                   href="./images/modal/modal-icons-sprite.svg#icon-form-icon-1"
@@ -887,7 +883,7 @@
           <label class="modal-label">
             Phone
             <div class="modal-input-wrapper">
-              <input type="tel" class="modal-input" name="phone" required />
+              <input type="tel" class="modal-input" name="phone" />
               <svg class="modal-input-icon" width="12" height="12">
                 <use
                   href="./images/modal/modal-icons-sprite.svg#icon-form-icon-2"
@@ -898,7 +894,7 @@
           <label class="modal-label">
             Email
             <div class="modal-input-wrapper">
-              <input type="email" class="modal-input" name="email" required />
+              <input type="email" class="modal-input" name="email" />
               <svg class="modal-input-icon" width="12" height="12">
                 <use
                   href="./images/modal/modal-icons-sprite.svg#icon-form-icon-3"
@@ -936,7 +932,13 @@
             </label>
           </div>
 
-          <button type="submit" class="modal-submit-btn hero-btn">Send</button>
+          <button
+            type="submit"
+            class="modal-submit-btn hero-btn"
+            id="modal-send-btn"
+          >
+            Send
+          </button>
         </form>
       </div>
     </div>
