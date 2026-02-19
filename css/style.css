@@ -660,24 +660,31 @@ img {
   top: 0;
   left: 0;
   background-color: rgba(46, 47, 66, 0.4);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 40px 0;
+  overflow-y: auto;
+
   opacity: 0;
   pointer-events: none;
   transition: opacity 300ms ease-in-out;
 }
+
 .modal {
-  overflow-y: auto;
   width: 288px;
-  min-height: 584px;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+
   box-shadow:
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
+
   background-color: #fcfcfc;
   border-radius: 4px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   padding: 72px 16px 24px;
   position: relative;
 }
