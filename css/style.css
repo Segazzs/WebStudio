@@ -182,6 +182,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: auto;
 }
 
 .menu-close-btn {
