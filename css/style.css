@@ -176,7 +176,7 @@ img {
   top: 0;
   z-index: 999;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #fff;
   padding: 72px 16px 40px 16px;
   display: flex;
@@ -655,7 +655,7 @@ img {
 
 .dashboard {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -665,6 +665,7 @@ img {
   transition: opacity 300ms ease-in-out;
 }
 .modal {
+  overflow-y: auto;
   width: 288px;
   min-height: 584px;
   box-shadow:
@@ -786,7 +787,7 @@ img {
 }
 
 .modal-label-checkbox {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0;
@@ -824,17 +825,12 @@ img {
 }
 
 .label-checkbox-text {
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
 }
 
 .modal-checkbox:checked {
   background-color: green;
-}
-
-.label-checkbox-text {
-  display: flex;
-  flex-direction: column;
 }
 
 .modal-policy-link {
@@ -842,6 +838,7 @@ img {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
+  display: inline;
 }
 
 .modal-submit-btn {
